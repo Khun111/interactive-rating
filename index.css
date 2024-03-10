@@ -1,0 +1,101 @@
+body .content-con .rating, body, body .content-con .button-div, body .content-con .image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .content-con .button-div, body .content-con .image-div {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+body .text-center {
+  text-align: center;
+}
+body .content-con {
+  background-color: hsl(213, 19%, 18%);
+  padding: 1.25em;
+  border-radius: 0.75rem;
+  display: grid;
+  row-gap: 1em;
+}
+body .content-con .image-div {
+  padding: 0.8em 1em;
+  max-width: 40px;
+}
+body .content-con .rating {
+  background-color: hsl(216, 12%, 54%);
+  width: 78%;
+  margin: 0 auto;
+  padding: 0.4em 0.7em;
+  border-radius: 0.75em;
+}
+body .content-con .rating p {
+  color: hsl(25, 97%, 53%);
+}
+body .content-con .button-div {
+  padding: 0.3rem 0.7rem;
+}
+body .content-con .button-div:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+body .content-con .button-div:active {
+  background-color: hsl(25, 97%, 53%);
+}
+body .content-con h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+body .content-con p {
+  color: hsl(217, 12%, 63%);
+}
+body .content-con .button-con {
+  display: flex;
+  justify-content: space-between;
+}
+body .content-con button {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 0.825em 0;
+  border: 0;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 30%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,106 @@
+$background-color: hsl(216, 12%, 8%);
+$container-color: hsl(213, 19%, 18%);
+$button-color: hsl(216, 12%, 54%);
+$paragraph-color: hsl(217, 12%, 63%);
+$heading-color: hsl(0, 0, 100%);
+
+%center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%button {
+  @extend %center-flex;
+  background-color: $button-color;
+  color: $paragraph-color;
+  border-radius: 50%;
+}
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 70%;
+}
+body {
+  @extend %center-flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+  .text-center {
+    text-align: center;
+  }
+  .content-con {
+    background-color: $container-color;
+    padding: 1.25em;
+    border-radius: 0.75rem;
+    display: grid;
+    row-gap: 1em;
+    .image-div {
+      @extend %button;
+      padding: 0.8em 1em;
+      max-width: 40px;
+    }
+    .rating {
+      @extend %center-flex;
+      background-color: $button-color;
+      width: 78%;
+      margin: 0 auto;
+      padding: 0.4em 0.7em;
+      border-radius: 0.75em;
+      p {
+        color:hsl(25, 97%, 53%);
+      }
+    }
+    .button-div {
+        @extend %button;
+        padding: 0.3rem 0.7rem;
+      }
+    .button-div:hover {
+        background-color: $paragraph-color;
+        color: $heading-color;
+    }
+    .button-div:active {
+        background-color: hsl(25, 97%, 53%);
+    }
+    h2 {
+      color: $heading-color;
+      font-weight: 700;
+    }
+    p {
+      color: $paragraph-color;
+    }
+    .button-con {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      background-color: hsl(25, 97%, 53%);
+      color: $heading-color;
+      width: 100%;
+      padding: 0.825em 0;
+      border: 0;
+      border-radius: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 30%;
+  }
+}
